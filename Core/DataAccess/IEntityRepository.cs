@@ -1,5 +1,5 @@
-﻿using Entities.Abstract;
-using Entities.Concrete;
+﻿
+using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Abstract;
+namespace Core.DataAccess;
 
 //burada class demek referans tip demektir
 //IEntity dediğimizde IEntitiy ve ondan implement edilen şeyler yazılabilir T yerine demek oluyor

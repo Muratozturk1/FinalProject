@@ -1,4 +1,6 @@
-﻿using Entities.Concrete;
+﻿using Core.DataAccess;
+using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +15,5 @@ namespace DataAccess.Abstract;
     {
     // Şimdi burada prodcut ve category adlı 2 nesnemiz var ve ikisinde değişen tek yer prodcut ve category o yüzden generics ile yaparsak
     // her seferinde tek tek bu işlemi yapmamıza gerek kalmaz.
-       
+      List<ProdcutDetailDto> GetProdcutDetails();
     }

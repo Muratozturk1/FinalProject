@@ -3,9 +3,35 @@ using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 
-ProdcutManager prodcutManager = new ProdcutManager(new EfProdcutDal());
-foreach (var prodcut in prodcutManager.GetAll())
+//CategoryTest();
+
+
+//ProductTest();
+
+static void ProductTest()
 {
-    Console.WriteLine(prodcut.ProductName);
+    /*ProdcutManager prodcutManager = new ProdcutManager(new EfProdcutDal());
+
+    var result = prodcutManager.GetProductDetails();
+    if (result.Success == true) 
+    {
+        foreach (var prodcut in result.Data)
+        {
+            Console.WriteLine(prodcut.ProdcutName + "/" + prodcut.CategoryName);
+        }
+    }
+    else 
+    {
+        Console.WriteLine(result.Message);
+    }
+   */
 }
 
+static void CategoryTest()
+{
+   /* CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
+    foreach (var category in categoryManager.GetAll())
+    {
+        Console.WriteLine(category.CategoryName);
+    }*/
+}
